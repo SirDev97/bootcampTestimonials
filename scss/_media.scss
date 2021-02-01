@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+  .slide {
+    flex-direction: row;
+    text-align: left;
+    &__text {
+      background-position: 10% top;
+      background-size: 100px;
+      align-items: flex-start;
+    }
+    &__img {
+      margin-left: -100px;
+      z-index: -1;
+    }
+    &__img {
+      width: 400px;
+    }
+  }
+
+  .buttons {
+    top: 310px;
+    transform: translate(0);
+    left: calc(100% - 310px);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .slide__img {
+    margin-left: -30px;
+    background-size: cover;
+    background-position: top right;
+  }
+
+  .buttons {
+    top: 280px;
+  }
+}

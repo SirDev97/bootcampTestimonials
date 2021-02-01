@@ -1,0 +1,68 @@
+.slider {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__img {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 40px;
+    background-image: url("/images/pattern-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    img {
+      height: 100%;
+      width: 300px;
+    }
+  }
+
+  &__text {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: top center;
+  }
+
+  &__testimonial {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $darkBlue;
+  }
+
+  &__author {
+    margin-top: 20px;
+    color: $darkBlue;
+    font-size: 1rem;
+    font-weight: 700;
+
+    span {
+      color: $grayishBlue;
+      font-weight: 500;
+      display: block;
+    }
+  }
+
+  &__john {
+    display: none;
+  }
+}
